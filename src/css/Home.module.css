@@ -39,12 +39,104 @@
          border-bottom-right-radius: 50%;
      }
 
+    /* Responsive tweaks */
+    @media (max-width: 640px) {
+        .buttonRounded,
+        .buttonRoundedSecondary {
+            padding: 10px 18px;
+            font-size: 15px;
+        }
+
+        .floatingElement {
+            display: none; /* hide floating icons on very small screens */
+        }
+    }
+
+    @media (min-width: 641px) and (max-width: 1024px) {
+        .element1 { width: 56px; height: 56px; }
+        .element2 { width: 44px; height: 44px; }
+        .element3 { width: 50px; height: 50px; }
+        .element4 { width: 48px; height: 48px; }
+        .element5 { width: 48px; height: 48px; }
+    }
+
+     /* Floating icons near the image (CSS Module names must match JS usage) */
+     .floatingElement {
+         position: absolute;
+         width: 56px;
+         height: 56px;
+         background: rgba(255, 255, 255, 0.06);
+         border-radius: 50%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         font-size: 1.25rem;
+         color: white;
+         animation: float 6s ease-in-out infinite;
+         backdrop-filter: blur(6px);
+         border: 1px solid rgba(255, 255, 255, 0.08);
+         z-index: 20; /* above the image which is z-10 */
+         transform-origin: center;
+         pointer-events: none;
+     }
+
+     .element1 {
+         top: 8%;
+         left: 6%;
+         animation-delay: 0s;
+         width: 64px;
+         height: 64px;
+     }
+
+     .element2 {
+         top: 22%;
+         right: 6%;
+         animation-delay: 1.8s;
+         width: 48px;
+         height: 48px;
+     }
+
+     .element3 {
+         bottom: 6%;
+         left: 18%;
+         animation-delay: 3.6s;
+         width: 56px;
+         height: 56px;
+     }
+     .element4 {
+         bottom: 16%;
+         right: 18%;
+         animation-delay: 3.6s;
+         width: 56px;
+         height: 56px;
+     }
+     .element5 {
+         bottom: 46%;
+         left: -8%;
+         animation-delay: 3.6s;
+         width: 56px;
+         height: 56px;
+     }
+
+     @keyframes float {
+         0% {
+             transform: translateY(0) rotate(0deg);
+         }
+
+         50% {
+             transform: translateY(-18px) rotate(180deg);
+         }
+
+         100% {
+             transform: translateY(0) rotate(360deg);
+         }
+     }
 
 
 
 
      /* From Uiverse.io by kennyotsu-monochromia */
-     .container {
+     /* .container {
          width: 100%;
          height: 100%;
          --color: #E1E1E1;
@@ -52,4 +144,4 @@
          background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent),
              linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
          background-size: 100px 100px;
-     }
+     } */
