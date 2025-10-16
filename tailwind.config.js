@@ -11,8 +11,8 @@ module.exports = {
 			},
 			colors: {
 				primary: {
-					DEFAULT: '#0ea5e9',
-					foreground: '#0b1220',
+					DEFAULT: '#9E3FFD',
+					foreground: '#ffffff',
 				},
 				accent: '#22c55e',
 			},

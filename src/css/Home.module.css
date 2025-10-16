@@ -1,0 +1,55 @@
+     .buttonRounded {
+         display: inline-block;
+         background-color: #9E3FFD;
+         color: white;
+         padding: 15px 40px;
+         border-radius: 30px;
+         font-size: 18px;
+         font-weight: 600;
+         text-decoration: none;
+         transition: background-color 0.3s;
+     }
+
+     .buttonRounded:hover {
+         background-color: rgba(158, 63, 253, 0.2);
+         color: #9E3FFD;
+         border: 1px solid #9E3FFD;
+     }
+
+     .buttonRoundedSecondary {
+         display: inline-block;
+         background-color: rgba(158, 63, 253, 0.2);
+         color: #9E3FFD;
+         border: 1px solid #9E3FFD;
+         padding: 15px 40px;
+         border-radius: 30px;
+         font-size: 18px;
+         font-weight: 600;
+         text-decoration: none;
+         transition: background-color 0.3s;
+     }
+
+     .buttonRoundedSecondary:hover {
+         background-color: #9E3FFD;
+         color: white;
+     }
+
+     .image {
+         border-bottom-left-radius: 50%;
+         border-bottom-right-radius: 50%;
+     }
+
+
+
+
+
+     /* From Uiverse.io by kennyotsu-monochromia */
+     .container {
+         width: 100%;
+         height: 100%;
+         --color: #E1E1E1;
+         background-color: #F3F3F3;
+         background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent),
+             linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
+         background-size: 100px 100px;
+     }
