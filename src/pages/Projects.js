@@ -1,5 +1,4 @@
 import React from 'react';
-import SEO from '../components/SEO';
 
 const projects = [
 	{
@@ -52,7 +51,6 @@ function Card({ p }) {
 export default function Projects() {
 	return (
 		<main className="container-responsive py-12" id="projects">
-			<SEO title="Projects" description="Selected projects by Muhammad Awais with live demos and code." />
 			<h2 className="text-2xl sm:text-3xl font-bold">Projects</h2>
 			<div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
 				{projects.map((p) => <Card key={p.title} p={p} />)}

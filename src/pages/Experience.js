@@ -1,10 +1,8 @@
 import React from 'react';
-import SEO from '../components/SEO';
 
 export default function Experience() {
 	return (
 		<main className="container-responsive py-12">
-			<SEO title="Experience" description="Internship and academic background of Muhammad Awais." />
 			<h2 className="text-2xl sm:text-3xl font-bold">Experience / Education</h2>
 			<ul className="mt-6 space-y-4">
 				<li className="p-4 rounded-lg border border-black/5 dark:border-white/10">

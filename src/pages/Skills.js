@@ -1,5 +1,4 @@
 import React from 'react';
-import SEO from '../components/SEO';
 import { FaReact, FaNodeJs, FaGitAlt, FaBootstrap } from 'react-icons/fa';
 import { SiJavascript, SiTailwindcss, SiExpress, SiMongodb, SiMysql, SiVercel, SiPostman, SiAntdesign } from 'react-icons/si';
 import { VscCode } from 'react-icons/vsc';
@@ -22,8 +21,7 @@ const SkillCard = ({ icon: Icon, label }) => (
 
 export default function Skills() {
 	return (
-		<main className="container-responsive py-12">
-			<SEO title="Skills" description="Frontend, Backend, and Tools – MERN Stack skillset of Muhammad Awais." />
+        <main className="container-responsive py-12">
 			<h2 className="text-2xl sm:text-3xl font-bold">Skills / Tech Stack</h2>
 			<Section title="Frontend">
 				<SkillCard icon={FaReact} label="React" />

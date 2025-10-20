@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import SEO from '../components/SEO';
 // import emailjs from '@emailjs/browser'; // Use this when configuring real keys
 
 export default function Contact() {
@@ -21,7 +20,6 @@ export default function Contact() {
 
 	return (
 		<main className="container-responsive py-12">
-			<SEO title="Contact" description="Contact Muhammad Awais for hiring or collaboration." />
 			<h2 className="text-2xl sm:text-3xl font-bold">Contact / Hire Me</h2>
 			<form onSubmit={onSubmit} className="mt-6 grid sm:grid-cols-2 gap-4">
 				<input name="name" value={form.name} onChange={onChange} placeholder="Name" required className="px-4 py-3 rounded-md border border-black/10 dark:border-white/20 bg-transparent" />
